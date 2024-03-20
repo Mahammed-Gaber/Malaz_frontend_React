@@ -1,0 +1,61 @@
+/*============ testimonial_area css ============*/
+.testimonial_area {
+    background: #f9f9ff;
+  }
+  
+  .testimonial_slider .testimonial_item {
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 40px;
+  }
+  
+  .testimonial_slider .testimonial_item img {
+    width: auto;
+    margin-right: 30px;
+  }
+  
+  .testimonial_slider .testimonial_item p {
+    color: #8c8d9e;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+  }
+  
+  .testimonial_slider .testimonial_item .sec_h4 {
+    line-height: 30px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  
+  .testimonial_slider .testimonial_item .sec_h4:hover {
+    color: #52c5fd;
+  }
+  
+  .testimonial_slider .testimonial_item .star a {
+    color: #f3c300;
+    font-size: 14px;
+  }
+  
+  .testimonial_slider .owl-dots {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .testimonial_slider .owl-dots .owl-dot {
+    width: 14px;
+    height: 14px;
+    background: #eeeeee;
+    display: inline-block;
+    margin: 0px 5px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  
+  .testimonial_slider .owl-dots .owl-dot.active {
+    background: #f3c300;
+  }
+  
+  /*---------------------------------------------------- */
