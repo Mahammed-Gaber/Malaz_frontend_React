@@ -16,6 +16,7 @@ import BookingArea from './components/AcooModation/BookingTabl/BookingArea';
 import Deatails from './components/AcooModation/deatails/Deatails';
 import Profile from './components/AcooModation/profile/Profile';
 import Profilehost from './components/AcooModation/profilehost/Profilehost';
+import Myblog from './components/Blog/myblog';
 // import Deatails from './components/AcooModation/deatails/Deatails';
 // import BookingArea from './components/AcooModation/BookingTabl/BookingArea';
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/aboutUs" element={<AboutUS/>} />
           <Route path="/accomodation" element={<MyAcooModation />} />
+          <Route path="/blog" element={<Myblog />} />
           <Route  path='/deatails' element={<Deatails/>}></Route>
           <Route  path='/profile' element={<Profile/>}></Route>
 

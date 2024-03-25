@@ -1,4 +1,6 @@
 import './cards.css'
+import { Link } from "react-router-dom";
+
 import rom1 from'./../../../assets/image/room/room1.jpg'
 import rom2 from'./../../../assets/image/room/room2.jpg'
 import rom3 from'./../../../assets/image/room/room3.jpg'
@@ -20,14 +22,14 @@ function Card() {
             <div className="container">
                 <div className="section_title text-center" >
                     <h2 className="title_color">Hotel Accomodation</h2>
-                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+                    <p>Your Dream Getaway Starts Here: Plan Your Perfect Trip with an Unforgettable Hotel Stay </p>
                 </div>
                 <div className="row mb_30">
                     <div className="col-lg-3 col-sm-6">
                         <div className="accomodation_item text-center">
                             <div className="hotel_img">
                                 <img src={rom1} alt=""/>
-                                <a href="#" className="btn theme_btn button_hover">Book Now</a>
+                                <Link to="Accomodation" className="btn theme_btn button_hover">explore</Link>
                             </div>
                             <a href="#"><h4 className="sec_h4">Double Deluxe Room</h4></a>
                             <h5>$250<small>/night</small></h5>
@@ -37,7 +39,7 @@ function Card() {
                         <div className="accomodation_item text-center">
                             <div className="hotel_img">
                                 <img src={rom2} alt=""/>
-                                <a href="#" className="btn theme_btn button_hover">Book Now</a>
+                                <Link to="Accomodation" className="btn theme_btn button_hover">explore</Link>
                             </div>
                             <a href="#"><h4 className="sec_h4">Single Deluxe Room</h4></a>
                             <h5>$200<small>/night</small></h5>
@@ -47,7 +49,7 @@ function Card() {
                         <div className="accomodation_item text-center">
                             <div className="hotel_img">
                                 <img src={rom3} alt=""/>
-                                <a href="#" className="btn theme_btn button_hover">Book Now</a>
+                                <Link to="Accomodation" className="btn theme_btn button_hover">explore</Link>
                             </div>
                             <a href="#"><h4 className="sec_h4">Honeymoon Suit</h4></a>
                             <h5>$750<small>/night</small></h5>
@@ -57,7 +59,7 @@ function Card() {
                         <div className="accomodation_item text-center">
                             <div className="hotel_img">
                                 <img src={rom4} />
-                                <a href="#" className="btn theme_btn button_hover">Book Now</a>
+                                <Link to="Accomodation" className="btn theme_btn button_hover">explore</Link>
                             </div>
                             <a href="#"><h4 className="sec_h4">Economy Double</h4></a>
                             <h5>$200<small>/night</small></h5>
