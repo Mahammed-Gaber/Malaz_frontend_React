@@ -80,8 +80,8 @@ function Nav () {
                     aria-haspopup='true'
                     aria-expanded='false'
                   >
-                    profile
-                    {/* <i class="fa-solid fa-user-tie"  style={{width:"50px",fontSize:"20px" }}></i> */}
+                    {/* profile */}
+                    <i class="fa-solid fa-user-tie"  style={{width:"50px",fontSize:"20px" }}></i>
                   </NavLink>
 
                   <ul className='dropdown-menu'>
@@ -91,7 +91,7 @@ function Nav () {
                       </NavLink>
                     </li>
                     <li className='nav-item'>
-                      <NavLink className='nav-link' to='Profile'>
+                      <NavLink className='nav-link' to='Account'>
                         account
                       </NavLink>
                     </li>

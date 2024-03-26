@@ -17,6 +17,8 @@ import Deatails from './components/AcooModation/deatails/Deatails';
 import Profile from './components/AcooModation/profile/Profile';
 import Profilehost from './components/AcooModation/profilehost/Profilehost';
 import Myblog from './components/Blog/myblog';
+import Account from './components/AcooModation/accountprofile/Account';
+import Createprofile from './components/AcooModation/createprofile/Createprofile';
 // import Deatails from './components/AcooModation/deatails/Deatails';
 // import BookingArea from './components/AcooModation/BookingTabl/BookingArea';
 
@@ -52,6 +54,9 @@ function App() {
           </Route>
           <Route  path='/BookingArea' element={<BookingArea/>}></Route>
           <Route  path='/Profilehost' element={<Profilehost/>}></Route>
+          <Route  path='/Account' element={<Account/>}></Route>
+          {/* <Route  path='/Profile' element={<Profile/>}></Route> */}
+          <Route  path='/Createprofile' element={<Createprofile/>}></Route>
       
         </Route>
       </Routes>
