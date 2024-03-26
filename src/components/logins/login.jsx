@@ -1,10 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
-
 import './login.css'
 import axios from 'axios'
+
 
 function Login () {
   const {
@@ -14,16 +12,15 @@ function Login () {
   } = useForm()
 
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     // eslint-disable-next-line no-undef
-    axios.post('http://localhost:3000/guests/login', data)
+    axios.post('http://127.0.0.1:3000/hosts/login', data)
     .then(response => {
       console.log('Form data sent successfully:', response.data);
-      
+      localStorage.setItem('token' ,response.data.token);
     })
     .catch(error => {
-      console.log('here error');
-      console.error('Error sending form data:', error);
+      console.error('Error sending form data:', error.response.data);
       
     });
   };

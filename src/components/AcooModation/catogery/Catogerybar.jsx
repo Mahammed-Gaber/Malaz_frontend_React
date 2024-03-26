@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Catogerybar.css'
 import axios from 'axios'
 
@@ -11,21 +11,12 @@ const items = [
   { id: 'card6', icon: 'fa-solid fa-person-drowning' }
 ]
 
-const cards1 = [
-  { id: 'card1', content: 'Card 1 content' },
-  { id: 'card2', content: 'Card 2 content' },
-  { id: 'card3', content: 'Card 3 content' },
-  { id: 'card4', content: 'Card 4 content' },
-  { id: 'card5', content: 'Card 5 content' },
-  { id: 'card6', content: 'Card 6 content' }
-]
 
 function Catogerybar () {
   const [activeCardId, setActiveCardId] = useState(null)
   const [cards, setCards] = useState([])
   useEffect(() => {
-    axios
-      .get('http://localhost:3000/place/getAllPlaces')
+    axios.get('http://localhost:3000/places/getAllPlaces')
       .then(response => {
         console.log('Form data sent successfully:', response.data.Places)
         setCards(response.data.Places)
@@ -37,7 +28,7 @@ function Catogerybar () {
 
   const handleClick = cardId => {
     setActiveCardId(cardId)
-    // new = cards.filter(item=>item.cat)
+    console.log(activeCardId);
   }
 
   return (
