@@ -1,7 +1,10 @@
 import './Accomodation.css'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
+// import axios from 'axios'
 import { useEffect, useState } from 'react'
+
+// Use axios from modefided file
+import axios from '../../../axios/instance'
 
 function Accomodation () {
   const navigate =useNavigate()
@@ -10,18 +13,12 @@ function Accomodation () {
 
 
   useEffect(() => {
-    const token = localStorage.getItem('token')
-    axios.get('http://127.0.0.1:3000/place/getAllPlaces', {
-      headers:{
-        'Authorization': `Bearer ${token}`
-      }
-    })
+    axios.get('/place/getAllPlaces')
     .then((result)=> {
       setPlaces([...result.data.places])
     })
   }, [])
 
-console.log(places);
 
   return (
     <>

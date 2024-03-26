@@ -1,12 +1,17 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Route, Routes } from 'react-router-dom';
+import axios from 'axios';
 
 //////////////////////////////////////////////////////
 
+
+// // Set token in headers for all requests
+// const token = localStorage.getItem('token')
+// axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+
 import Register from './components/Register/Register';
 import Login from './components/logins/login';
-import './axios/instance';
 
 import Blog from './components/HOME/blog/Blog';
 import Contact from './components/Contact/contacts/contacts';
