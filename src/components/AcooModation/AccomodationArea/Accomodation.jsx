@@ -13,7 +13,7 @@ function Accomodation () {
 
 
   useEffect(() => {
-    axios.get('/place/getAllPlaces')
+    axios.get('/place/getAllPlaces?beds[lte]=2&price[gte]=50')
     .then((result)=> {
       setPlaces([...result.data.places])
     })
