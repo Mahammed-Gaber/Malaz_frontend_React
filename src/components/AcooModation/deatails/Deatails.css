@@ -1,4 +1,4 @@
- /* =============Blog Banner css ============= */
+ /* /* =============Blog Banner css =============
 .blog_banner {
   min-height: 780px;
   overflow: hidden;
@@ -41,9 +41,8 @@
   background: url(../image/banner/banner-2.jpg) no-repeat scroll center top/cover;
 } */
 
-/*=============End Blog Banner css =============*/
-/*---------------------------------------------------- */
-/* ---------------------------------------------------- */
+/* =============End Blog Banner css =============
+ 
  .accomodation_item {
   margin-bottom: 30px;
 }
@@ -107,7 +106,7 @@
   margin-bottom: 45px;
 } 
 
-/*=========== Start facilities_area css =============*/
+=========== Start facilities_area css =============
 .facilities_area {
   position: relative;
   z-index: 1;
@@ -149,8 +148,8 @@
   margin-bottom: 0px;
 } 
 
-/*=========== End facilities_area css =============*/
-/*=========== Start about_history_area css =============*/
+=========== End facilities_area css =============
+=========== Start about_history_area css =============
  .about_content {
   padding-right: 60px;
 }
@@ -159,7 +158,7 @@
   padding: 18px 0px 30px;
 }
 
-/*=========== End about_history_area css =============*/
+=========== End about_history_area css =============
  .gallery_item {
   margin-bottom: 30px;
 }
@@ -202,11 +201,9 @@
 
 .gallery_item .gallery_img:hover .hover {
   opacity: 1;
-} 
+}  */
 
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/*============ testimonial_area css ============*/
+/* ============ testimonial_area css ============
 .testimonial_area {
   background: #f9f9ff;
 }
@@ -266,16 +263,14 @@
   background: #f3c300;
 } 
 
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/*================= latest_blog_area css =============*/
+================= latest_blog_area css =============
  .single-recent-blog-post {
   margin-bottom: 30px;
 }
 
 .single-recent-blog-post .thumb {
-  overflow: hidden;
-}
+  overflow: hidden; */ 
+/* }
 
 .single-recent-blog-post .thumb img {
   -webkit-transition: all 0.7s linear;
@@ -330,7 +325,7 @@
   margin-left: 2px;
 } 
 
-/*========= blog_categorie_area css ===========*/
+========= blog_categorie_area css ===========
  .blog_categorie_area {
   background: #f9f9ff;
   padding-top: 80px;
@@ -392,7 +387,7 @@
   background: rgba(248, 182, 0, 0.85);
 } 
 
-/*============ blog_left_sidebar css ==============*/
+============ blog_left_sidebar css ==============
 .blog_area {
   background: #f9f9ff;
   padding-top: 80px;
@@ -785,9 +780,9 @@
   text-decoration: none;
   background-color: #f3c300;
   border-color: #eee;
-} */
+}  */
 
-/*============ Start Blog Single Styles  =============*/
+/* ============ Start Blog Single Styles  =============
  .single-post-area {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -795,9 +790,9 @@
 
 .single-post-area .social-links {
   padding-top: 10px;
-}
+} */
 
-.single-post-area .social-links li {
+/* .single-post-area .social-links li {
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -1084,9 +1079,9 @@
 
 .comment-form textarea.form-control {
   height: 140px;
-}
+}  */
 
-/* .comment-form ::-webkit-input-placeholder {  */
+/* .comment-form ::-webkit-input-placeholder {   */
   /* Chrome/Opera/Safari  */
   /* font-size: 13px;
   color: #777;
@@ -1108,7 +1103,7 @@
   /* Firefox 18- */
   /* font-size: 13px;
   color: #777;
-} */
+}
 
  .comment-form .primary-btn {
   border-radius: 0px !important;
@@ -1136,7 +1131,7 @@
 /*============ End Blog Single Styles  =============*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-/*============== contact_area css ================*/
+/* ============== contact_area css ================
  .mapBox {
   height: 420px;
   margin-bottom: 80px;
@@ -1220,8 +1215,8 @@
   cursor: pointer;
 } */
 
-/* Contact Success and error Area css
-============================================================================================ */
+  /* ////////////////Contact Success and error Area css
+ 
  .modal-message .modal-dialog {
   position: absolute;
   top: 36%;
@@ -1262,14 +1257,14 @@
 
 .modal-message .modal-dialog .modal-content .modal-header p {
   display: block;
-} 
+}   */
 
 /* End Contact Success and error Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============== Elements Area css ================*/
- .mb-20 {
+ /* .mb-20 {
   margin-bottom: 20px;
 }
 
@@ -1316,11 +1311,11 @@
 
 .sample-text-area p u {
   color: #f3c300;
-} */
+} */ 
 
 /*============== End Elements Area css ================*/
 /*==============Elements Button Area css ================*/
- .elements_button {
+ /* .elements_button {
   background: #f9f9ff;
 }
 
@@ -1508,14 +1503,14 @@
   line-height: 38px;
   padding-top: 0px;
   padding-bottom: 0px;
-} 
+}  */
 
 /*==============End Elements Button Area css ================*/
 /* =================================== */
 /*  Elements Page Styles
 /* =================================== */
 /*---------- Start Elements Page -------------*/
-.whole-wrap {
+/* .whole-wrap {
   background-color: #f9f9ff;
 }
 
@@ -1585,4 +1580,34 @@
 .switch-wrap p {
   margin: 0;
 }
- 
+  */
+  /* ///////////////////////////// */
+.carsuel{
+  overflow: hidden;
+  cursor: grab;
+  margin-top: 140px;
+}
+
+
+  .inner-carsuel{
+  display: flex;
+}
+
+
+  .item{
+min-height: 25rem;
+min-width: 20rem;
+padding: 40px 20px;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    pointer-events: none;
+}
+.my-div {
+  border-bottom: 1px solid #ccc;
+}
+.disc{
+  margin-right: 10px;
+}
