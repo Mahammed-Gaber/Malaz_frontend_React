@@ -10,9 +10,6 @@ function MyAcooModation () {
       <Breadcrumb />
       <Catogerybar/>
       <Accomodation />
-     {/* //////////////////// */}
-      {/* <Account/> */}
-      
     </>
   )
 }

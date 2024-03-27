@@ -1,19 +1,21 @@
-// import axios from "axios";
+import axios from 'axios';
 
-// export const axiosInstance = axios.create();
+const instance = axios.create({
+  baseURL: 'http://127.0.0.1:3000',
+});
 
-// axiosInstance.interceptors.request.use(
-//     function (request) {
-//         request.headers.Authorization = "barer: '" + localStorage.getItem('token');
-//         return request;
-//     }
-// )
+instance.interceptors.request.use(
+  (config) => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    console.log(token);
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
 
-// axiosInstance.interceptors.response.use(
-//     function (response) {
-//         if (response.data.token) {
-//             localStorage.setItem('token', response.data.token);
-//         }
-//         return response;
-//     }
-// )
+export default instance;

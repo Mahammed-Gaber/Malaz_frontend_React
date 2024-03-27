@@ -372,7 +372,6 @@
 
 ////////////////////////////////////////////
 
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
@@ -411,7 +410,7 @@ function Profile() {
 
               <h5>Verify your identity</h5>
               <p className="card-text">
-                Before you book or host on Airbnb, you’ll need to complete this
+                Before you book or host on Airbnb, you will need to complete this
                 step.
               </p>
               <a href="#" className="btn btn-primary btn-lg">
@@ -423,7 +422,7 @@ function Profile() {
           <div className="col-md-5 ">
             <div className="border-top p-3">
               <div className="card-body">
-                <h4 className="card-title">It's time to create your profile</h4>
+                <h4 className="card-title">It is time to create your profile</h4>
                 <p className="card-text text-muted">
                   Your Airbnb profile is an important part of every reservation.
                   Create yours to help other Hosts and guests get to know you.

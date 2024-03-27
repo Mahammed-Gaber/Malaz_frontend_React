@@ -1,4 +1,3 @@
-// import { useSelector } from "react-redux";
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
 
@@ -37,39 +36,34 @@ function Nav () {
             >
               <ul className='nav navbar-nav menu_nav ml-auto'>
                 <li className='nav-item active'>
-                  <NavLink className='nav-link' to='home'>
+                  <NavLink className='nav-link' to='/'>
                     Home
                   </NavLink>
                 </li>
 
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='/aboutUs'>
+                  <NavLink className='nav-link' to='/AboutUs'>
                     About us
                   </NavLink>
                 </li>
 
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='accomodation'>
+                  <NavLink className='nav-link' to='/Accomodation'>
                     Accomodation
                   </NavLink>
                 </li>
 
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='Blog'>
+                  <NavLink className='nav-link' to='/Blog'>
                     BloG
                   </NavLink>
                 </li>
 
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='Contact'>
+                  <NavLink className='nav-link' to='/Contact'>
                     Contact
                   </NavLink>
                 </li>
-                {/* <li className="nav-item">
-                  <NavLink className="nav-link" to="Register">
-                  SIGN IN
-                  </NavLink>
-                </li> */}
 
                 <li className='nav-item submenu dropdown'>
                   <NavLink
@@ -89,24 +83,13 @@ function Nav () {
 
                   <ul className='dropdown-menu'>
                     <li className='nav-item'>
-                      <NavLink className='nav-link' to='Register'>
+                      <NavLink className='nav-link' to='/Login'>
                         SIGN IN
                       </NavLink>
                     </li>
                     <li className='nav-item'>
                       <NavLink className='nav-link' to='Account'>
                         account
-                      </NavLink>
-                    </li>
-                    <li className='nav-item'>
-                      <NavLink className='nav-link' to='blog'>
-                        log ouT
-                      </NavLink>
-                    </li>
-
-                    <li className='nav-item'>
-                      <NavLink className='nav-link' to='blogDetails'>
-                        log IN
                       </NavLink>
                     </li>
                   </ul>
