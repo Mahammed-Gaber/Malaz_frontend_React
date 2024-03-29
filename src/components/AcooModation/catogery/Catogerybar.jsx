@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Catogerybar.css'
-import axios from 'axios'
+import axios from '../../../axios/instance';
+import Accomodation from '../AccomodationArea/Accomodation';
 
 const items = [
   { id: 'card1', icon: 'fa-solid fa-house-medical-flag' },
@@ -27,28 +28,27 @@ function Catogerybar () {
     return queryParams.toString();
   }
 
-  console.log(generateQuery(2, 250))
+  // console.log(generateQuery(2, 250))
 
   useEffect(() => {
     if (activeCardId !== null)
     // axios.get(`http://localhost:3000/places/getAllPlaces?${activeCardId ? 'activeCardId=' + activeCardId : ''}${filter2 ? '&filter2=' + filter2 : ''}${filter3 ? '&filter3=' + filter3 : ''}`)
 
-    axios.get(`http://localhost:3000/place/getAllPlaces?${generateQuery(2, 90)}`)
+    axios.get(`/place/getAllPlaces?${generateQuery(2, 90)}`)
       .then(response => {
-        console.log(response)
         setCards(response.data.Places)
       })
       .catch(error => {
         console.error('Error sending form data:', error)
       })
-  }, [activeCardId])
+    }, [activeCardId])
 
-  const handleClick = cardId => {
-    setActiveCardId(cardId)
-  }
-
-  return (
-    <>
+    const handleClick = cardId => {
+      setActiveCardId(cardId)
+    }
+    
+    return (
+      <>
       <div className='all'>
         <div className='section_title text-center'>
           <div className='wrapper'>

@@ -21,6 +21,7 @@ function Login () {
     })
     .catch(error => {
       console.error('Error sending form data:', error.response.data);
+      alert(error.response.data)
       
     });
   };
