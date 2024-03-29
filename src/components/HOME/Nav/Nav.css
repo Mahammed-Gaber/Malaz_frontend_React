@@ -18,6 +18,17 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+
+.fa-solid{
+  color: #D4A20E !important;
+  cursor: pointer;
+}
+.malaz{
+  font-size: small;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 a:hover, a:focus {
   text-decoration: none;
   outline: none;

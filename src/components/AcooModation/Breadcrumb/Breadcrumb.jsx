@@ -11,7 +11,7 @@ function Breadcrumb() {
                         <h2 className="page-cover-tittle">Accomodation</h2>
                         <ol className="breadcrumb">
                             <li><a href="index.html">Home</a></li>
-                            <i className="fa-solid fa-arrow-right " style={{color:"black"}}></i>
+                            {/* <i className="fa-solid fa-arrow-right " style={{color:"black"}}></i> */}
                             <li className="active">Accomodation</li>
                         </ol>
                     </div>

@@ -2,7 +2,7 @@
 // import { useForm } from 'react-hook-form'
 // import { Link } from 'react-router-dom'
 // import axios from 'axios'
-// import './Profile.css' // Assuming you have a CSS file for styling
+import './Profile.css' // Assuming you have a CSS file for styling
 
 // function Profile () {
 //   const {
@@ -427,9 +427,8 @@ function Profile() {
                   Your Airbnb profile is an important part of every reservation.
                   Create yours to help other Hosts and guests get to know you.
                 </p>
-                <Link to="Createprofile" className="btn btn-danger btn-lg"onClick={()=>navigate("/Createprofile")}>
-                  Create profile
-                </Link>
+                <button to="Createprofile" className="btn btn-danger btn-lg"onClick={()=>navigate("/Createprofile")}>
+Update Profile                </button>
                 {/* //////////////// */}
                 {/* <button className='btn theme_btn button_hover'onClick={()=>navigate("/deatails")}>
                           Deatails

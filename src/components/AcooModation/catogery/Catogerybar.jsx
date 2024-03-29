@@ -15,20 +15,36 @@ const items = [
 function Catogerybar () {
   const [activeCardId, setActiveCardId] = useState(null)
   const [cards, setCards] = useState([])
+
+  function generateQuery(bedsGt, priceLte, sort, fields, limit, page) {
+    const queryParams = new URLSearchParams();
+    if (bedsGt) queryParams.append('beds[gt]', bedsGt);
+    if (priceLte) queryParams.append('price[gte]', priceLte);
+    if (sort) queryParams.append('sort', sort);
+    if (fields) queryParams.append('fields', fields);
+    if (limit) queryParams.append('limit', limit);
+    if (page) queryParams.append('page', page);
+    return queryParams.toString();
+  }
+
+  console.log(generateQuery(2, 250))
+
   useEffect(() => {
-    axios.get('http://localhost:3000/places/getAllPlaces')
+    if (activeCardId !== null)
+    // axios.get(`http://localhost:3000/places/getAllPlaces?${activeCardId ? 'activeCardId=' + activeCardId : ''}${filter2 ? '&filter2=' + filter2 : ''}${filter3 ? '&filter3=' + filter3 : ''}`)
+
+    axios.get(`http://localhost:3000/place/getAllPlaces?${generateQuery(2, 90)}`)
       .then(response => {
-        console.log('Form data sent successfully:', response.data.Places)
+        console.log(response)
         setCards(response.data.Places)
       })
       .catch(error => {
         console.error('Error sending form data:', error)
       })
-  }, [])
+  }, [activeCardId])
 
   const handleClick = cardId => {
     setActiveCardId(cardId)
-    console.log(activeCardId);
   }
 
   return (

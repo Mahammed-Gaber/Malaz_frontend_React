@@ -2,19 +2,15 @@
 // import BlogArea from "./Blog Area/Blog Area"
 // import BlogCategory from "./Blog Category/Blog Category"
 
-import Deatails from "../AcooModation/deatails/Deatails"
+// import Deatails from "../AcooModation/deatails/Deatails"
 
-
-
-function Myblog() {
+function Myblog () {
   return (
     <>
-    {/* <Banner />
+      {/* <Banner />
     <BlogCategory />
     <BlogArea /> */}
-    <Deatails/>
-
-    
+      {/* <Deatails/> */}
     </>
   )
 }
