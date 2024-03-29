@@ -16,21 +16,27 @@ function Profilehost () {
       <div>
         <p
           className=''
-          style={{ color: 'white', fontSize: '3rem', justifyContent: 'center' }}
+          style={{ color: 'white', fontSize: '3rem', textAlign: 'center' }}
         >
           Welcome Mahdy
         </p>
+        <br />
         <Link
           to='Profile'
           className=''
-          style={{ color: 'white', fontSize: '1rem' }}
+          style={{
+            color: 'white',
+            fontSize: '1rem',
+            gap: '10px',
+            textAlign: 'center'
+          }}
         >
-          Your reservations
+          {/* Your reservations */}
         </Link>
       </div>
       <InputGroup
         className='inputs d-flex'
-        style={{ gap: '10px', marginLeft: '80px' }}
+        style={{ gap: '10px', justifyContent: 'center' }}
       >
         <InputGroup className='mb-3' style={{ color: 'white', width: '200px' }}>
           {/* <InputGroup.Radio aria-label='Radio button for following text input' /> */}
@@ -75,16 +81,18 @@ function Profilehost () {
           color: 'white',
           width: '1000px',
           height: '15rem',
-          marginLeft: '97px'
+          gap: '10px',
+          marginLeft: '175px'
         }}
       >
         {/* <InputGroup.Radio aria-label='Radio button for following text input' /> */}
         <Form.Control
           // placeholder='You dont have guests checking out today or tomorrow'
-          
+
           aria-label='Text input with radio button'
         />
       </InputGroup>
+      <br />
 
       {/* ///////////////////////// */}
       <div>
@@ -93,11 +101,12 @@ function Profilehost () {
           style={{
             color: 'white',
             fontSize: '1.5rem',
-            justifyContent: 'center'
+            textAlign: 'center'
           }}
         >
           We are ready to provide assistance
         </p>
+        <br />
         <Link
           to='Profile'
           className=''
@@ -107,7 +116,10 @@ function Profilehost () {
         </Link>
       </div>
       {/* ///////////// */}
-      <div className='dis d-flex' style={{ gap: '10px' }}>
+      <div
+        className='dis d-flex'
+        style={{ gap: '10px', justifyContent: 'center' }}
+      >
         <Card style={{ width: '30rem', height: '9rem' }}>
           <i
             className='fa-brands fa-cc-diners-club'
@@ -138,6 +150,7 @@ function Profilehost () {
           </Card.Body>
         </Card>
       </div>
+      <br />
       {/* /////////////////// */}
       <div>
         <p
@@ -145,7 +158,7 @@ function Profilehost () {
           style={{
             color: 'white',
             fontSize: '1.5rem',
-            justifyContent: 'center'
+            textAlign: 'center'
           }}
         >
           Resources and tips

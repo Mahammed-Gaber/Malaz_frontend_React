@@ -45,5 +45,7 @@
   vertical-align: middle;
   margin: 0px 10px 0px 7px;
 }
-
+li{
+  cursor: pointer;
+}
 /*============= End banner_area css =============*/

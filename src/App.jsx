@@ -20,14 +20,19 @@ import AboutUS from './components/AboutUS/About US';
 import MyAcooModation from './components/AcooModation/myAcooModation';
 import Accomodation from './components/AcooModation/AccomodationArea/Accomodation';
 import BookingArea from './components/AcooModation/BookingTabl/BookingArea';
-import Deatails from './components/AcooModation/deatails/Deatails';
 import Profile from './components/AcooModation/profile/Profile';
 import Profilehost from './components/AcooModation/profilehost/Profilehost';
 import Myblog from './components/Blog/myblog';
 import Account from './components/AcooModation/accountprofile/Account';
 import Createprofile from './components/AcooModation/createprofile/Createprofile';
+<<<<<<< HEAD
+import Newblog from './components/Blog/newblog/Newblog';
+import Mydeatails from './components/AcooModation/deatails/Mydeatails';
+=======
+import Nav from './components/HOME/Nav/Nav';
 // import Deatails from './components/AcooModation/deatails/Deatails';
 // import BookingArea from './components/AcooModation/BookingTabl/BookingArea';
+>>>>>>> 35e10dfc5b17e8abb276491437dde2694419b63a
 
 
 
@@ -36,6 +41,7 @@ function App() {
 
   return (
     <>
+    <Nav/>
 
       <Routes>
       <Route path="*" element={<Home />} />
@@ -46,8 +52,8 @@ function App() {
           <Route path="/aboutUs" element={<AboutUS/>} />
           <Route path="/accomodation" element={<MyAcooModation />} />
           <Route path="/blog" element={<Myblog />} />
-          <Route  path='/deatails' element={<Deatails/>}></Route>
           <Route  path='/profile' element={<Profile/>}></Route>
+          <Route  path='/Newblog' element={<Newblog/>}></Route>
 
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Elements" element={<elements />} />
@@ -56,13 +62,12 @@ function App() {
           <Route  path='/Login' element={<Login/>}></Route>
           
           <Route  path='/Accomodation' element={<Accomodation/>}>
-            {/* <Route path='deatails' element={<Deatails/>}/>
-            <Route path='BookingArea' element={<BookingArea/>}/> */}
+         
           </Route>
           <Route  path='/BookingArea' element={<BookingArea/>}></Route>
           <Route  path='/Profilehost' element={<Profilehost/>}></Route>
           <Route  path='/Account' element={<Account/>}></Route>
-          {/* <Route  path='/Profile' element={<Profile/>}></Route> */}
+          <Route  path='/Mydeatails' element={<Mydeatails/>}></Route>
           <Route  path='/Createprofile' element={<Createprofile/>}></Route>
       
         </Route>

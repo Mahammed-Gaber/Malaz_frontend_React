@@ -28,19 +28,30 @@ function Catogerybar () {
     return queryParams.toString();
   }
 
+<<<<<<< HEAD
   // console.log(generateQuery(2, 250))
+=======
+  console.log(generateQuery(2, 250))
+>>>>>>> 487d25de6a588cf6835cb3478fe0f28a61147d3d
 
   useEffect(() => {
     if (activeCardId !== null)
     // axios.get(`http://localhost:3000/places/getAllPlaces?${activeCardId ? 'activeCardId=' + activeCardId : ''}${filter2 ? '&filter2=' + filter2 : ''}${filter3 ? '&filter3=' + filter3 : ''}`)
 
+<<<<<<< HEAD
     axios.get(`/place/getAllPlaces?${generateQuery(2, 90)}`)
       .then(response => {
+=======
+    axios.get(`http://localhost:3000/place/getAllPlaces?${generateQuery(2, 90)}`)
+      .then(response => {
+        console.log(response)
+>>>>>>> 487d25de6a588cf6835cb3478fe0f28a61147d3d
         setCards(response.data.Places)
       })
       .catch(error => {
         console.error('Error sending form data:', error)
       })
+<<<<<<< HEAD
     }, [activeCardId])
 
     const handleClick = cardId => {
@@ -49,6 +60,16 @@ function Catogerybar () {
     
     return (
       <>
+=======
+  }, [activeCardId])
+
+  const handleClick = cardId => {
+    setActiveCardId(cardId)
+  }
+
+  return (
+    <>
+>>>>>>> 487d25de6a588cf6835cb3478fe0f28a61147d3d
       <div className='all'>
         <div className='section_title text-center'>
           <div className='wrapper'>

@@ -1,0 +1,244 @@
+.map
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 100px;
+
+}
+/* ///////////////////////// */
+.carsuel{
+    overflow: hidden;
+    cursor: grab;
+    margin-top: 140px;
+  }
+  
+  
+    .inner-carsuel{
+    display: flex;
+  }
+  
+  
+    .item{
+  min-height: 25rem;
+  min-width: 20rem;
+  padding: 40px 20px;
+  }
+  .item img{
+      width: 100%;
+      height: 100%;
+      border-radius: 2rem;
+      pointer-events: none;
+  }
+  .my-div {
+    border-bottom: 1px solid #ccc;
+  }
+  .disc{
+    margin-right: 10px;
+  }
+  /* //////////////////////////////////////////////// */
+  /*----------------------------------------------------*/
+.theme_btn {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    background: #f3c300;
+    padding: 5px 30px;
+  }
+  
+  .theme_btn:before {
+    background: #f8b100;
+  }
+  
+  .theme_btn:hover {
+    color: #fff;
+  }
+  
+  .white_btn {
+    background: #fff;
+    padding: 0px 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #222222;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  
+  .button_hover {
+    border-radius: 0px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    border: 0px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .button_hover:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+    background: #f8b100;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 0;
+  }
+  
+  .button_hover:hover {
+    color: #fff;
+  }
+  
+  .button_hover:hover:before {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .theme_btn_two {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    background: #222222;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 29px;
+  }
+  
+  .book_now_btn {
+    width: 100%;
+    display: block;
+    background: #f3c300;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 5px 20px;
+  }
+  
+  /*---------------------------------------------------- */
+  /*=============  hotel_booking css =============*/
+  .hotel_booking_table {
+    background: #04091e;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 40px 50px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -34px;
+  }
+  
+  .hotel_booking_table h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .boking_table {
+    margin-left: -50px;
+  }
+  
+  .book_tabel_item .form-group {
+    margin-bottom: 0px;
+  }
+  
+  .book_tabel_item .form-group .input-group {
+    position: relative;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control {
+    border: 1px solid #2b3146;
+    background: transparent;
+    border-radius: 0px;
+    font-size: 13px;
+    line-height: 38px;
+    padding: 0px 20px;
+    color: #777777;
+    z-index: 0;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control.placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control:-moz-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control::-moz-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control::-webkit-input-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  .book_tabel_item .form-group .input-group .input-group-addon {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #777777;
+    z-index: 2;
+  }
+  
+  .book_tabel_item .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .book_tabel_item .nice-select {
+    background: transparent;
+    border-radius: 0px;
+    border: 1px solid #2b3146;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #777;
+  }
+  
+  .book_tabel_item .nice-select:after {
+    content: "\e874";
+    font-family: 'Linearicons-Free';
+    font-size: 13px;
+    color: #777777;
+    border: 0px;
+    top: 0;
+    margin-top: 0px;
+    right: 20px;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  

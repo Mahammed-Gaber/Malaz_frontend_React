@@ -11,7 +11,7 @@
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
-    margin-bottom: 13px;
+    /* margin-bottom: 13px; */
   }
   
   .single-footer-widget ul li a:hover {
