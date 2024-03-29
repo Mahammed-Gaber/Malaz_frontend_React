@@ -427,8 +427,14 @@ function Profile() {
                   Your Airbnb profile is an important part of every reservation.
                   Create yours to help other Hosts and guests get to know you.
                 </p>
+<<<<<<< HEAD
                 <button to="Createprofile" className="btn btn-danger btn-lg"onClick={()=>navigate("/Createprofile")}>
 Update Profile                </button>
+=======
+                <button  className="btn btn-danger btn-lg"onClick={()=>navigate("/Createprofile")}>
+                  Create profile
+                </button>
+>>>>>>> 35e10dfc5b17e8abb276491437dde2694419b63a
                 {/* //////////////// */}
                 {/* <button className='btn theme_btn button_hover'onClick={()=>navigate("/deatails")}>
                           Deatails

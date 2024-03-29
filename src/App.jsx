@@ -26,8 +26,14 @@ import Profilehost from './components/AcooModation/profilehost/Profilehost';
 import Myblog from './components/Blog/myblog';
 import Account from './components/AcooModation/accountprofile/Account';
 import Createprofile from './components/AcooModation/createprofile/Createprofile';
+<<<<<<< HEAD
 import Newblog from './components/Blog/newblog/Newblog';
 import Mydeatails from './components/AcooModation/deatails/Mydeatails';
+=======
+import Nav from './components/HOME/Nav/Nav';
+// import Deatails from './components/AcooModation/deatails/Deatails';
+// import BookingArea from './components/AcooModation/BookingTabl/BookingArea';
+>>>>>>> 35e10dfc5b17e8abb276491437dde2694419b63a
 
 
 
@@ -36,6 +42,7 @@ function App() {
 
   return (
     <>
+    <Nav/>
 
       <Routes>
       <Route path="*" element={<Home />} />

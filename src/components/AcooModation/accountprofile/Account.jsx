@@ -20,6 +20,7 @@ function Account() {
         {/* <button className='btn theme_btn button_hover'onClick={()=>navigate("/deatails")}>
               Deatails
             </button> */}
+<<<<<<< HEAD
         {/* <button
           to='Profile'
           className=''
@@ -37,6 +38,15 @@ function Account() {
         >
           Go to profile host
         </button> */}
+=======
+        <button to='Profile' className='' onClick={()=>navigate("/Profile")}  style={{ color: 'white', fontSize: '1rem' }}>
+          Go to profile
+        </button>
+<hr />
+        <button to='Profilehost' className='' onClick={()=>navigate("/Profilehost")}  style={{ color: 'white', fontSize: '1rem' }}>
+          Go to profile host
+        </button>
+>>>>>>> 35e10dfc5b17e8abb276491437dde2694419b63a
       </div>
 
       <div
