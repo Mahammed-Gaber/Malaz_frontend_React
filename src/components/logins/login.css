@@ -1,0 +1,127 @@
+.all {
+  background-image: url(./sunset-coming-through-windows-hotel.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-img {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  margin-top: 105px;
+
+}
+
+.content header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.field button {
+  width: 96%;
+  padding: 10px 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.field button:focus {
+  border-color: #007bff;
+}
+
+.field .fa {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.field .error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.pass {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.pass a {
+  color: #007bff;
+  font-size: 14px;
+}
+
+.field.space {
+  margin-top: 10px;
+}
+
+/* .field .pass-key { 
+   padding-right: 50px; 
+ }  */
+
+.field .show {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.field .show:hover {
+  color: #007bff;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.links .facebook {
+  background-color: #3b5998;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.links .facebook i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.links .instagram {
+  background-color: #e1306c;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.links .instagram i {
+  font-size: 20px;
+  margin-right: 5px
+};

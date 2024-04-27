@@ -1,0 +1,330 @@
+/*============= Start banner_area css =============*/
+.banner_area {
+    background: #04091e;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .banner_area .bg-parallax {
+    background: url("../../../assets/image/banner_bg.jpg") no-repeat scroll center 0/cover;
+    opacity: 0.50;
+  }
+  
+  .banner_area .position {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .booking_table {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 800px;
+  }
+  
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 125%;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .banner_content {
+    color: #fff;
+    margin-bottom: 94px;
+  }
+  
+  .banner_content h6 {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+  }
+  
+  .banner_content h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+  
+  .banner_content p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 0px 20px;
+  }
+  
+  /*============= End banner_area css =============*/
+  .hotel_booking_table {
+    background: #04091e;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 40px 50px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .hotel_booking_table h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .boking_table {
+    margin-left: -50px;
+  }
+  
+  .book_tabel_item .form-group {
+    margin-bottom: 0px;
+  }
+  
+  .book_tabel_item .form-group .input-group {
+    position: relative;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control {
+    border: 1px solid #2b3146;
+    background: transparent;
+    border-radius: 0px;
+    font-size: 13px;
+    line-height: 38px;
+    padding: 0px 20px;
+    color: #777777;
+    z-index: 0;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control.placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control:-moz-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control::-moz-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control::-webkit-input-placeholder {
+    color: #777777;
+  }
+  
+  .book_tabel_item .form-group .input-group .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  .book_tabel_item .form-group .input-group .input-group-addon {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #777777;
+    z-index: 2;
+  }
+  
+  .book_tabel_item .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .book_tabel_item .nice-select {
+    background: transparent;
+    border-radius: 0px;
+    border: 1px solid #2b3146;
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    color: #777;
+  }
+  
+  .book_tabel_item .nice-select:after {
+    content: "\e874";
+    font-family: 'Linearicons-Free';
+    font-size: 13px;
+    color: #777777;
+    border: 0px;
+    top: 0;
+    margin-top: 0px;
+    right: 20px;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+/* /////////////////////////// */
+/*=========== breadcrumb_area css =============*/
+.breadcrumb_area {
+  position: relative;
+  padding: 172px 0px 84px;
+  background: #04091e;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.breadcrumb_area .bg-parallax {
+  background: url("../image/about_banner.jpg") no-repeat scroll center 0/cover;
+  opacity: 0.50;
+  z-index: -1;
+}
+
+.page-cover-tittle {
+  display: block;
+  font-size: 36px;
+  line-height: 45px;
+  color: #fff;
+}
+
+.breadcrumb {
+  text-align: center;
+  background: transparent;
+  padding: 0px;
+  display: inline-block;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  color: #fff;
+}
+
+.breadcrumb li a {
+  color: #fff;
+}
+
+.breadcrumb li + li:before {
+  content: "\e87a";
+  font-family: 'Linearicons-Free';
+  font-size: 14px;
+  font-weight: 600;
+  vertical-align: middle;
+  margin: 0px 10px 0px 7px;
+}
+
+/*============= End banner_area css =============*/
+/*=============Blog Banner css =============*/
+.blog_banner {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+.blog_banner .bg-parallax {
+  background: url(../image/banner/banner-1.jpg) no-repeat scroll center center;
+}
+
+.blog_banner .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_two .bg-parallax {
+  background: url(../image/banner/banner-2.jpg) no-repeat scroll center top/cover;
+}
+
+/*=============End Blog Banner css =============*/
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+.accomodation_item {
+  margin-bottom: 30px;
+}
+
+.accomodation_item .hotel_img {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.accomodation_item .hotel_img img {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.accomodation_item .hotel_img .theme_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  padding: 5px 25px;
+  max-width: 128px;
+}
+
+.accomodation_item .hotel_img:hover img {
+  -webkit-transform: scale(1.19);
+  -ms-transform: scale(1.19);
+  transform: scale(1.19);
+}
+
+.accomodation_item h5 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #52c5fd;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.accomodation_item h5 small {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.sec_h4 {
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 0px;
+}
+
+.accomodation_two {
+  margin-bottom: -40px;
+}
+
+.accomodation_two .accomodation_item {
+  margin-bottom: 45px;
+}
+
+  
+  
