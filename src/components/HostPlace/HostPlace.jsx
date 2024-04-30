@@ -5,11 +5,12 @@ import Structure from "./structure 2/Structure";
 import PrivacyType from "./Privacy-type 3/Privacytype";
 import Floorplan from "./Floor-plan 4/Floorplan";
 import Instantbook from "./instant-book 5/Instantbook";
-import Price from "./price 6/Price";
+import Price from "./placeImages/PlaceImages";
 import Congratulations from "./Congratulations 7/Congratulations";
 import { useDispatch, useSelector } from "react-redux";
 import MoreInfo from "./MoreInfo/MoreInfo";
 import { createPlace } from "../../Redux/slices/placeSlice";
+import PlaceImages from "./placeImages/PlaceImages";
 
 function HostPlace() {
 
@@ -28,7 +29,7 @@ function HostPlace() {
     price: '' ,
     has_availability: '' ,
     license: '' ,
-    instant_bookable: '' ,
+    instant_bookable: Boolean ,
     startDates: '',
     endDates : '' ,
     pictures_url : [],
@@ -43,7 +44,7 @@ const dispatch = useDispatch();
 
   const pageDisplay = () => {
     if (page === 0) {
-      return <Yourplace form={form} setForm={setForm}/>;
+      return <Yourplace />;
     } else if (page === 1) {
       // have properity type
       return <Structure formData={form} setForm={setForm}/>;
@@ -51,10 +52,12 @@ const dispatch = useDispatch();
       // have room_type
       return <PrivacyType formData={form} setForm={setForm} />;
     } else if (page === 3) {
-      return <Floorplan formData={form} setForm={setForm} />;
-    } else if (page === 4) {
       return <MoreInfo formData={form} setForm={setForm} />;
+    } else if (page === 4) {
+      return <Floorplan formData={form} setForm={setForm} />;
     } else if (page === 5) {
+      return <PlaceImages form={form} setForm={setForm} />;
+    } else if (page === 6) {
       return <Instantbook formData={form} setForm={setForm} />;
     // } 
     //else if (page === 6) {
@@ -115,13 +118,13 @@ const createYourPlace= () => {
           
           className="btn theme_btn button_hover "
           onClick={() => {
-            if (page ===5) {
+            if (page ===6) {
               createYourPlace(form);
             }else
             setPage((currentPage) => currentPage + 1);
           }}
         >
-          {page == 5 ? "Submit" : "Next"}
+          {page == 6 ? "Submit" : "Next"}
         </button>
       </div>
     </div>

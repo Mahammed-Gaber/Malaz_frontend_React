@@ -1,13 +1,28 @@
 import { useNavigate } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import "./Instantbook.css";
-function Instantbook() {
-  const navigate = useNavigate();
+import { useState } from "react";
+
+
+function Instantbook({formData, setForm}) {
+
+  const [selectedCard, setSelectedCard] = useState(null);
+
+
+  const handleCardSelect = (confirmReservations) => {
+    setSelectedCard(confirmReservations);
+    if (confirmReservations === 'Use instant booking') {
+      setForm({...formData, instant_bookable: true})
+    }else{
+      setForm({...formData, instant_bookable: false})
+    }
+  };
+  console.log(formData);
 
   return (
     <>
       <div className="container" style={{ alignContent: "center" }}>
-        <div className="disc" style={{ border: "2px solid red" }}>
+        <div className="disc">
           <p
             className=""
             style={{ color: "white", fontSize: "2.5rem", lineHeight: '45px', textAlign: "center" }}
@@ -27,9 +42,8 @@ function Instantbook() {
           >
             {/* Stacked cards for personal information and payments */}
             <Card
-              style={{ width: "25rem" }}
-              // onClick={() => navigate("/profile")}
-            >
+              style={{width: "25rem", backgroundColor: selectedCard  === 'Use instant booking' ? '#FFEC9E' : 'white' }} // Set width to 100% for responsive sizing
+              onClick={() => handleCardSelect('Use instant booking')}            >
               <Card.Body style={{ display: 'flex', justifyContent: 'flex-start',}}>
                 <i className="fa-solid fa-bolt" style={{ fontSize: "2rem", width : '20%'}}></i>
                 <div>
@@ -40,7 +54,8 @@ function Instantbook() {
             </Card>
   
             <Card
-              style={{ width: "25rem"}}
+              style={{width: "25rem", backgroundColor: selectedCard  === 'Approve or reject requests' ? '#FFEC9E' : 'white' }} // Set width to 100% for responsive sizing
+              onClick={() => handleCardSelect('Approve or reject requests')} 
               // onClick={() => navigate("/Profilehost")}
             >
               <Card.Body style={{ display: 'flex', justifyContent: 'space-between'}}>

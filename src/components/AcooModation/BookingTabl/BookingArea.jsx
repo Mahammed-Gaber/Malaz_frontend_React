@@ -1,8 +1,22 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './BookingArea.css'
+import axios from '../../../axios/instance'
 
-function BookingArea() {
+function BookingArea({data}) {
   const Navigate = useNavigate()
+
+const callStripe = async ()=> {
+  // const getRole = localStorage.getItem('role');
+      try {
+          let response = await axios.get(`/booking/checkout-session/${data}`)
+          window.open(response.data.session.url);
+          return response.data
+      } catch (error) {
+          return error.response
+      }
+}
+
+
   return (
     <>
      <>
@@ -78,9 +92,9 @@ function BookingArea() {
                       <option value={3}>Room 03</option>
                     </select>
                   </div>
-                  <a className="book_now_btn button_hover" onClick={()=>Navigate('/profile')}>
+                  <button className="book_now_btn button_hover" onClick={callStripe}>
                     Book Now
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

@@ -4,161 +4,19 @@ import { useDispatch, useSelector } from "react-redux";
 import { IncrementCounter } from "../../../Redux/slices/placeSlice";
 
 
-function Yourplace({ form, setForm}) {
-
-// const [placeImage, setPlaceImage] = useState([])
-
-
-  const handleImageChange = (event) => {
-    const files = event.target.files;
-    const formData = new FormData();
-  // console.log(files);
-    // for (let i = 0; i < files.length; i++) {
-      // formData.append('pictures_url', files);
-    // }
-    files.forEach((file)=> {
-      formData.append('pictures_url', file);
-    })
-    // setPlaceImage(files)
-    setForm({...form, pictures_url : files})
-    // console.log(form);
-  };
-
-  const handleCoverImage = (event) => {
-    const file = event.target.files[0];
-    // const formData = new FormData();
-    // formData.append('imageCover', file);
-  
-    setForm({...form, imageCover : file})
-  };
-console.log(form);
+function Yourplace() {
 
   return (
     <>
-      <section className="hero" style={{ overflow: "scroll" }}>
+      <section className="hero" style={{alignContent: 'center'}}>
         <div className="container hero__content">
           <h1 className="hero__title">Tell us about your residence</h1>
-          <p className="hero__text">
+          <h5 className="hero__text"  style={{marginTop: '40px'}}>
             At this point, we will ask you what type of property you have and
             whether guests will be booking the entire listing or just a room.
             Next, you will tell us the location and the number of guests that
             can be received.
-          </p>
-          <div className="tab-content pt-3">
-            <div className="tab-pane active">
-              <form className="form" noValidate="">
-                {/* Image */}
-                <div className="row">
-                  {/* <div className="col-12 col-sm-6 mb-3"> */}
-                  <div className="row">
-                    <div className="mb-2">
-                      <b>Image Place</b>
-                    </div>
-                    <div>
-
-                      <div>
-                          <div className="col-sm-6 form-group">
-                            <label>Upload your Cover Image</label>
-                            <input
-                              className="form-control"
-                              type="file"
-                              onChange={handleCoverImage}
-                            />
-                          </div>
-                        </div>
-
-
-                      <div className="col-sm-6 form-group">
-                        <label>Upload All Ur Image for Place</label>
-                        <input
-                          className="form-control"
-                          type="file"
-                          multiple
-                          onChange={handleImageChange}
-                        />
-                      </div>
-
-                      {/* {form && (
-                        <div>
-                          <p>Uploaded images:</p>
-                          <div className="col-sm-12">
-                            {form..map((name, index) => (
-                              <img
-                                key={index}
-                                src={form.pictures_url[index]}
-                                alt="img :("
-                                style={{
-                                  width: "100px",
-                                  height: "100px",
-                                  marginRight: "10px",
-                                }}
-                              />
-                            ))}
-                          </div>
-                        </div>
-                      )} */}
-
-                    </div>
-                  </div>
-                </div>
-
-                {/* <div className="col-12 col-sm-5 offset-sm-1 mb-3">
-                                <div className="mb-2">
-                                  <b>Keeping in Touch</b>
-                                </div>
-                                <div className="row">
-                                  <div className="col">
-                                    <label>Email Notifications</label>
-                                    <div className="custom-controls-stacked px-2">
-                                      <div className="custom-control custom-checkbox">
-                                        <input
-                                          type="checkbox"
-                                          className="custom-control-input"
-                                          id="notifications-blog"
-                                          defaultChecked=""
-                                        />
-                                        <label
-                                          className="custom-control-label"
-                                          htmlFor="notifications-blog"
-                                        >
-                                          Blog posts
-                                        </label>
-                                      </div>
-                                      <div className="custom-control custom-checkbox">
-                                        <input
-                                          type="checkbox"
-                                          className="custom-control-input"
-                                          id="notifications-news"
-                                          defaultChecked=""
-                                        />
-                                        <label
-                                          className="custom-control-label"
-                                          htmlFor="notifications-news"
-                                        >
-                                          Newsletter
-                                        </label>
-                                      </div>
-                                      <div className="custom-control custom-checkbox">
-                                        <input
-                                          type="checkbox"
-                                          className="custom-control-input"
-                                          id="notifications-offers"
-                                          defaultChecked=""
-                                        />
-                                        <label
-                                          className="custom-control-label"
-                                          htmlFor="notifications-offers"
-                                        >
-                                          Personal Offers
-                                        </label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> */}
-              </form>
-            </div>
-          </div>
+          </h5>
         </div>
       </section>
       {/* <div className="container" style={{overflow: 'scroll', border: '2px solid red'}}>

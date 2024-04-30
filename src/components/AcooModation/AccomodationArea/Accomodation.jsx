@@ -46,9 +46,9 @@ function Accomodation() {
                           Deatails
                         </button>
                       </div>
-                      <a href='#'>
+                      {/* <Link href='#'> */}
                         <h4 className='sec_h4'>{place.place_name}</h4>
-                      </a>
+                      {/* </Link> */}
 
                       {[...Array(5)].map((star, index)=> {
                         return (

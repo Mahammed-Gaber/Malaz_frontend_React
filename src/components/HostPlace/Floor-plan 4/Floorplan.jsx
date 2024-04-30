@@ -2,8 +2,6 @@ import "./Floorplan.css";
 
 function Floorplan({ formData, setForm }) {
 
-  console.log(formData);
-
   const handleLocationClick = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -25,21 +23,21 @@ function Floorplan({ formData, setForm }) {
   };
 
   
-  const handleMapLinkClick = () => {
-    const { latitude, longitude } = getCoordinatesFromLocationString(formData.location);
-    window.open(`https://www.google.com/maps?q=${latitude},${longitude}`, '_blank');
-  };
+  // const handleMapLinkClick = () => {
+  //   const { latitude, longitude } = getCoordinatesFromLocationString(formData.location);
+  //   window.open(`https://www.google.com/maps?q=${latitude},${longitude}`, '_blank');
+  // };
 
-  const getCoordinatesFromLocationString = (locationString) => {
-    // Parse the location string and extract latitude and longitude
-    const regex = /\(([^,]+),\s*([^)]+)\)/;
-    const matches = locationString.match(regex);
-    if (matches && matches.length === 3) {
-      return { latitude: matches[1], longitude: matches[2] };
-    } else {
-      return { latitude: 0, longitude: 0 }; // Default coordinates
-    }
-  };
+  // const getCoordinatesFromLocationString = (locationString) => {
+  //   // Parse the location string and extract latitude and longitude
+  //   const regex = /\(([^,]+),\s*([^)]+)\)/;
+  //   const matches = locationString.match(regex);
+  //   if (matches && matches.length === 3) {
+  //     return { latitude: matches[1], longitude: matches[2] };
+  //   } else {
+  //     return { latitude: 0, longitude: 0 }; // Default coordinates
+  //   }
+  // };
 
   return (
     <>

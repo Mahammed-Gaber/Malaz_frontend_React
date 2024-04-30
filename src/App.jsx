@@ -29,7 +29,7 @@ import Structure from './components/HostPlace/structure 2/Structure'
 import PrivacyType from './components/HostPlace/Privacy-type 3/Privacytype'
 import Floorplan from './components/HostPlace/Floor-plan 4/Floorplan'
 import Instantbook from './components/HostPlace/instant-book 5/Instantbook'
-import Price from './components/HostPlace/price 6/Price'
+// import Price from './components/HostPlace/price 6/Price'
 import Congratulations from './components/HostPlace/Congratulations 7/Congratulations'
 import Auth from './components/Auth/Auth'
 import Nav from './components/HOME/Nav/Nav'
@@ -123,7 +123,7 @@ useEffect(()=>{
           <Route path='/PrivacyType' element={<PrivacyType />} />
           <Route path='/Floorplan' element={<Floorplan />} />
           <Route path='/Instantbook' element={<Instantbook />} />
-          <Route path='/Price' element={<Price />} />
+          {/* <Route path='/Price' element={<Price />} /> */}
           <Route path='/Congratulations' element={<Congratulations />} />
         {/* </Route> */}
 
