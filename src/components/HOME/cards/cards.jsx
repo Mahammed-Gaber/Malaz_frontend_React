@@ -80,7 +80,7 @@ function Card () {
                 <div key={data._id} className='col-lg-3 col-sm-6'>
                   <div className='accomodation_item text-center'>
                     <div className='hotel_img'>
-                      <img src={card.imageCover} style={{width: '100%', height: '100%'}}  alt='' />
+                      <img src={`http://localhost:3000/images/${card.imageCover}`} style={{width: '100%', height: '100%'}}  alt='' />
                       <button
                         to='Mydeatails'
                         className='btn theme_btn button_hover'
@@ -104,6 +104,44 @@ function Card () {
           </div>
         </div>
       </section>
+      <div className="main-container">
+  <div className="cards">
+    <div className="card card1">
+      <div>
+        <ul>
+          <li>
+            <i className="fa-solid fa-star" />
+          </li>
+          <li>
+            <i className="fa-solid fa-star" />
+          </li>
+          <li>
+            <i className="fa-solid fa-star" />
+          </li>
+          <li>
+            <i className="fa-solid fa-star" />
+          </li>
+          <li>
+            <i className="fa-solid fa-star" />
+          </li>
+        </ul>
+      </div>
+      <p className="close">
+        <i className="fa-solid fa-xmark" />
+      </p>
+      <p className="desc">
+        Ut enim ad minim veniam. Lorem ipsum dolor sit amet consectetur
+        adipisicing.
+      </p>
+      <p className="read-more">
+        <a className="readMore" href="#">
+          Read More <i className="fas fa-arrow-right" />
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
       {/* <!--================ Accomodation Area  =================--> */}
     </>
   )
